@@ -26,7 +26,7 @@ $client->setWSDL($wsdl_location);
 
 $params = array('MyReportSuite1', 'MyReportSuite2');
 
-$success = $client->call('Saint.GetCompatabiltyMetrics',array('report_suite_array'=>$params));
+$success = $client->call('Saint.GetCompatibilityMetrics',array('report_suite_array'=>$params));
 
 if ($success) {
     $response = $client->getResponse();
